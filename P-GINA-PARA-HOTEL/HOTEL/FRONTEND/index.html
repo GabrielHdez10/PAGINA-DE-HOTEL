@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paradiso | Exclusividad y Confort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body class="bg-white text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-[0.3em] text-blue-950 uppercase">Paradiso</div>
+            
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+                <a href="#inicio" class="hover:text-amber-600 transition">Inicio</a>
+                <a href="#habitaciones" class="hover:text-amber-600 transition">Habitaciones</a>
+                <a href="#experiencias" class="hover:text-amber-600 transition">Experiencias</a>
+            </div>
+
+            <button class="bg-blue-950 text-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-amber-600 transition-all shadow-lg">
+                Reservar Ahora
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80" 
+                 class="absolute inset-0 w-full h-full object-cover brightness-50 scale-105" alt="Hotel View">
+            
+            <div class="relative z-10 text-center text-white px-4">
+                <span class="uppercase tracking-[0.5em] text-xs mb-4 block font-light">Un santuario de serenidad</span>
+                <h1 class="text-6xl md:text-9xl font-bold mb-6 leading-tight">Tu Escape <br> <span class="italic font-light">Privado</span></h1>
+                <div class="h-px w-32 bg-amber-500 mx-auto mb-8"></div>
+            </div>
+
+            <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 w-full max-w-6xl px-6">
+                <div class="bg-white p-8 shadow-2xl rounded-sm grid grid-cols-1 md:grid-cols-4 gap-8 items-end border-t-4 border-amber-500">
+                    <div class="flex flex-col">
+                        <label class="text-[10px] uppercase font-bold text-gray-400 mb-2">Check-In</label>
+                        <input type="date" class="outline-none border-b border-gray-100 pb-2 focus:border-blue-900 transition text-sm">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-[10px] uppercase font-bold text-gray-400 mb-2">Check-Out</label>
+                        <input type="date" class="outline-none border-b border-gray-100 pb-2 focus:border-blue-900 transition text-sm">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-[10px] uppercase font-bold text-gray-400 mb-2">Huéspedes</label>
+                        <select class="outline-none border-b border-gray-100 pb-2 bg-transparent text-sm cursor-pointer">
+                            <option>01 Adulto</option>
+                            <option selected>02 Adultos</option>
+                            <option>Familiar</option>
+                        </select>
+                    </div>
+                    <button class="bg-blue-950 text-white py-4 font-bold text-xs uppercase tracking-widest hover:bg-amber-600 transition-colors">
+                        Disponibilidad
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="habitaciones" class="max-w-7xl mx-auto px-6 py-32">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl md:text-6xl font-bold text-blue-950 mb-6">Estancias con Alma</h2>
+                    <p class="text-gray-500 leading-relaxed italic">Cada una de nuestras suites ha sido diseñada para ser un refugio de paz, combinando materiales naturales con la tecnología más avanzada.</p>
+                </div>
+                <a href="#" class="text-[10px] font-bold uppercase tracking-widest border-b-2 border-amber-500 pb-1 hover:text-amber-600 transition">Ver todas las suites</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" 
+                             class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-110">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Suite Presidencial</h3>
+                    <p class="text-xs text-amber-600 uppercase tracking-widest mb-4 font-semibold">Desde $450 / Noche</p>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Vistas ininterrumpidas al océano y servicio de mayordomo privado las 24 horas.</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" 
+                             class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-110">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Deluxe Garden</h3>
+                    <p class="text-xs text-amber-600 uppercase tracking-widest mb-4 font-semibold">Desde $280 / Noche</p>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Un oasis privado rodeado de jardines botánicos y sonidos de la naturaleza.</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" 
+                             class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-110">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Ocean Loft</h3>
+                    <p class="text-xs text-amber-600 uppercase tracking-widest mb-4 font-semibold">Desde $320 / Noche</p>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Diseño vanguardista con ventanales de suelo a techo frente al arrecife.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-50 border-t border-gray-100 py-20 text-center">
+        <p class="text-[9px] uppercase tracking-[0.8em] text-gray-400">© 2026 Paradiso Luxury Resorts</p>
+    </footer>
+
+</body>
+</html>
