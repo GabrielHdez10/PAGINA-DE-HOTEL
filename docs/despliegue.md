@@ -7,4 +7,4 @@
 
 ## Instalación
 ```bash
-git clone https://github.com/TUUSUARIO/PAGINA-DE-HOTEL.git
+git clone https://github.com/GabrielHdez10/PAGINA-DE-HOTEL.git
