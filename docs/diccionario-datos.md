@@ -1,11 +1,8 @@
 
 ---
 
-# 🚀 PASO 3: diccionario de datos
+#PASO 3: diccionario de datos
 
-En `docs/diccionario-datos.md` pega esto:
-
-```markdown
 # Diccionario de Datos
 
 | Elemento | Tipo | Descripción | Datos |
